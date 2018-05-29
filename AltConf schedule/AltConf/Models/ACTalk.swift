@@ -8,8 +8,11 @@
 
 import Foundation
 import UIKit
+import CloudKit
 
 struct ACTalk {
+    var record: CKRecord?
+    
     var title: String?
     var speaker: String?
     var date: Date?

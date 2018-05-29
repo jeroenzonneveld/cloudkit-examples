@@ -16,16 +16,27 @@ final class TalkTableViewCell: UITableViewCell {
     @IBOutlet weak private var locationLabel: UILabel!
     @IBOutlet weak private var speakerImage: UIImageView!
     
+    @IBOutlet weak private var favoriteView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
         speakerImage.clipsToBounds = true
         speakerImage.layer.cornerRadius = speakerImage.frame.size.height / 2
+        
+        favoriteView.isHidden = true
     }
     
     var talk: ACTalk? {
         didSet {
             setCellLabels()
+        }
+    }
+    
+    var isFavorite: Bool? {
+        didSet {
+            guard let isFavorite = isFavorite else { return }
+            favoriteView.isHidden = !isFavorite
         }
     }
     
@@ -37,6 +48,8 @@ final class TalkTableViewCell: UITableViewCell {
         timeLabel.text = nil
         locationLabel.text = nil
         speakerImage.image = nil
+        
+        favoriteView.isHidden = true
     }
     
     func setCellLabels() {

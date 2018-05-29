@@ -59,5 +59,135 @@
             </objects>
             <point key="canvasLocation" x="1166" y="-561"/>
         </scene>
+        <!--Add Talk View Controller-->
+        <scene sceneID="QHd-dv-4Vq">
+            <objects>
+                <viewController storyboardIdentifier="AddTalkViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EEE-ZV-1xl" customClass="AddTalkViewController" customModule="AltConf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Axf-91-2i6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zonneveld" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-hS-TjP">
+                                <rect key="frame" x="137.5" y="40" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="U40-0s-otK"/>
+                                    <constraint firstAttribute="width" constant="100" id="WSj-oz-QYI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a80-vx-Tsw">
+                                <rect key="frame" x="20" y="150" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Jeroen Zonneveld" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-NE-ok3">
+                                <rect key="frame" x="20" y="176" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNs-fk-zpN">
+                                <rect key="frame" x="20" y="216" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Starting with CloudKit" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-yD-mPP">
+                                <rect key="frame" x="20" y="242" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IM-zF-e5s">
+                                <rect key="frame" x="20" y="282" width="70.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Room 2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlP-7Z-f04">
+                                <rect key="frame" x="20" y="308" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mMi-qp-3PR">
+                                <rect key="frame" x="20" y="379" width="335" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="f6i-8Y-Agw"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="549299030.75206697">
+                                    <!--2018-05-29 15:03:50 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns1-lj-iWm">
+                                <rect key="frame" x="20" y="353" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htI-3t-aZp">
+                                <rect key="frame" x="20" y="539" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.0039890792656938692" green="0.54539750647668395" blue="0.21143266671960137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xfz-hy-7Ft"/>
+                                </constraints>
+                                <state key="normal" title="Add speaker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTalk:" destination="EEE-ZV-1xl" eventType="touchUpInside" id="MyA-Il-C0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ns1-lj-iWm" firstAttribute="top" secondItem="qlP-7Z-f04" secondAttribute="bottom" constant="15" id="0yV-Yc-Bea"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="qlP-7Z-f04" secondAttribute="trailing" constant="20" id="25y-nb-9zS"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="Mx5-yD-mPP" secondAttribute="trailing" constant="20" id="69G-KP-Vgh"/>
+                            <constraint firstItem="Ns1-lj-iWm" firstAttribute="leading" secondItem="qlP-7Z-f04" secondAttribute="leading" id="7aF-CL-mYy"/>
+                            <constraint firstItem="3IM-zF-e5s" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="8mS-YZ-sS8"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="3ic-NE-ok3" secondAttribute="trailing" constant="20" id="BnH-IG-566"/>
+                            <constraint firstItem="htI-3t-aZp" firstAttribute="top" secondItem="mMi-qp-3PR" secondAttribute="bottom" constant="30" id="DWh-VU-sbF"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="mMi-qp-3PR" secondAttribute="trailing" constant="20" id="GuR-xh-5ha"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="sNs-fk-zpN" secondAttribute="trailing" constant="20" id="HAZ-jm-fUe"/>
+                            <constraint firstItem="qlP-7Z-f04" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="Ndr-gg-Ace"/>
+                            <constraint firstItem="3ic-NE-ok3" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="NgO-aR-Xpd"/>
+                            <constraint firstItem="sNs-fk-zpN" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="Ohp-LD-GPf"/>
+                            <constraint firstItem="htI-3t-aZp" firstAttribute="centerX" secondItem="Exz-JJ-Y54" secondAttribute="centerX" id="Pgs-TA-Hvy"/>
+                            <constraint firstItem="3ic-NE-ok3" firstAttribute="top" secondItem="a80-vx-Tsw" secondAttribute="bottom" constant="5" id="TkK-PR-kgt"/>
+                            <constraint firstItem="Mx5-yD-mPP" firstAttribute="top" secondItem="sNs-fk-zpN" secondAttribute="bottom" constant="5" id="VJQ-Uo-4FX"/>
+                            <constraint firstItem="sNs-fk-zpN" firstAttribute="top" secondItem="3ic-NE-ok3" secondAttribute="bottom" constant="10" id="Xtt-c0-L0p"/>
+                            <constraint firstItem="mMi-qp-3PR" firstAttribute="top" secondItem="Ns1-lj-iWm" secondAttribute="bottom" constant="5" id="b2G-Jh-6Ig"/>
+                            <constraint firstItem="Mx5-yD-mPP" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="ck4-JU-M9Y"/>
+                            <constraint firstItem="htI-3t-aZp" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="f4s-5A-ekV"/>
+                            <constraint firstItem="mMi-qp-3PR" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="gEz-EK-nFI"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="Ns1-lj-iWm" secondAttribute="trailing" constant="20" id="i5c-Lf-xGV"/>
+                            <constraint firstItem="a80-vx-Tsw" firstAttribute="leading" secondItem="Exz-JJ-Y54" secondAttribute="leading" constant="20" id="koj-Pp-mYH"/>
+                            <constraint firstItem="qlP-7Z-f04" firstAttribute="top" secondItem="3IM-zF-e5s" secondAttribute="bottom" constant="5" id="mna-l5-FQz"/>
+                            <constraint firstItem="3IM-zF-e5s" firstAttribute="top" secondItem="Mx5-yD-mPP" secondAttribute="bottom" constant="10" id="orU-Qq-7rC"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="a80-vx-Tsw" secondAttribute="trailing" constant="20" id="pi7-Lr-l0F"/>
+                            <constraint firstItem="8hZ-hS-TjP" firstAttribute="top" secondItem="Exz-JJ-Y54" secondAttribute="top" constant="20" id="vJx-bt-FuD"/>
+                            <constraint firstItem="8hZ-hS-TjP" firstAttribute="centerX" secondItem="Exz-JJ-Y54" secondAttribute="centerX" id="wgU-4R-ldi"/>
+                            <constraint firstItem="Exz-JJ-Y54" firstAttribute="trailing" secondItem="htI-3t-aZp" secondAttribute="trailing" constant="20" id="yUl-wW-dsP"/>
+                            <constraint firstItem="a80-vx-Tsw" firstAttribute="top" secondItem="8hZ-hS-TjP" secondAttribute="bottom" constant="10" id="z2T-t2-Mhd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Exz-JJ-Y54"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="mMi-qp-3PR" id="nB8-L7-1lA"/>
+                        <outlet property="imageView" destination="8hZ-hS-TjP" id="ar2-0z-M02"/>
+                        <outlet property="locationLabel" destination="qlP-7Z-f04" id="1GZ-eP-lzN"/>
+                        <outlet property="speakerLabel" destination="3ic-NE-ok3" id="oei-Ke-ETJ"/>
+                        <outlet property="talkTitleLabel" destination="Mx5-yD-mPP" id="Tgk-Oo-zSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdA-DC-tVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.80000000000001" y="176.76161919040482"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Zonneveld" width="64" height="64"/>
+    </resources>
+    <color key="tintColor" red="0.24313725490196078" green="0.54509803921568623" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

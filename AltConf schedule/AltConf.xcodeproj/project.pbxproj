@@ -10,7 +10,8 @@
 		5A437D2020B4B3A900687589 /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A437D1F20B4B3A900687589 /* TalkTableViewCell.swift */; };
 		5A437D2220B4B3E800687589 /* TalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A437D2120B4B3E800687589 /* TalkTableViewCell.xib */; };
 		5A437D2520B7423E00687589 /* ACTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A437D2420B7423E00687589 /* ACTalk.swift */; };
-		5A437D2820B7425E00687589 /* CKAsset+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A437D2720B7425E00687589 /* CKAsset+Extension.swift */; };
+		5A437D2820B7425E00687589 /* CloudKit+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A437D2720B7425E00687589 /* CloudKit+Helper.swift */; };
+		5AD4AD8320BDA21A009D08A2 /* AddTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4AD8220BDA21A009D08A2 /* AddTalkViewController.swift */; };
 		5AF79B8720B09843007F8BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF79B8620B09843007F8BF3 /* AppDelegate.swift */; };
 		5AF79B8920B09843007F8BF3 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF79B8820B09843007F8BF3 /* TalksViewController.swift */; };
 		5AF79B8C20B09843007F8BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF79B8A20B09843007F8BF3 /* Main.storyboard */; };
@@ -23,7 +24,8 @@
 		5A437D1F20B4B3A900687589 /* TalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
 		5A437D2120B4B3E800687589 /* TalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TalkTableViewCell.xib; sourceTree = "<group>"; };
 		5A437D2420B7423E00687589 /* ACTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTalk.swift; sourceTree = "<group>"; };
-		5A437D2720B7425E00687589 /* CKAsset+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Extension.swift"; sourceTree = "<group>"; };
+		5A437D2720B7425E00687589 /* CloudKit+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CloudKit+Helper.swift"; sourceTree = "<group>"; };
+		5AD4AD8220BDA21A009D08A2 /* AddTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalkViewController.swift; sourceTree = "<group>"; };
 		5AF79B8320B09843007F8BF3 /* AltConf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltConf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF79B8620B09843007F8BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF79B8820B09843007F8BF3 /* TalksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		5A437D2620B7425600687589 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5A437D2720B7425E00687589 /* CKAsset+Extension.swift */,
+				5A437D2720B7425E00687589 /* CloudKit+Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -102,6 +104,7 @@
 				5AF79B8D20B09844007F8BF3 /* Assets.xcassets */,
 				5AF79B8F20B09844007F8BF3 /* LaunchScreen.storyboard */,
 				5AF79B9220B09844007F8BF3 /* Info.plist */,
+				5AD4AD8220BDA21A009D08A2 /* AddTalkViewController.swift */,
 			);
 			path = AltConf;
 			sourceTree = "<group>";
@@ -196,8 +199,9 @@
 			files = (
 				5AF79B8920B09843007F8BF3 /* TalksViewController.swift in Sources */,
 				5A437D2020B4B3A900687589 /* TalkTableViewCell.swift in Sources */,
-				5A437D2820B7425E00687589 /* CKAsset+Extension.swift in Sources */,
+				5A437D2820B7425E00687589 /* CloudKit+Helper.swift in Sources */,
 				5AF79B8720B09843007F8BF3 /* AppDelegate.swift in Sources */,
+				5AD4AD8320BDA21A009D08A2 /* AddTalkViewController.swift in Sources */,
 				5A437D2520B7423E00687589 /* ACTalk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
