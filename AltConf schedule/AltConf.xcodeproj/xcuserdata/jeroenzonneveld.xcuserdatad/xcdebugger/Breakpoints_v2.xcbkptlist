@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CD6BD2DB-2290-4BC8-95D9-53426BA864A9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5FF9B43-900A-495F-8112-82980D80E1DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AltConf/AddTalkViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "addTalk(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0412B1B-C2B9-42A7-8DA2-F45B2DA4A0D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AltConf/AddTalkViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "addTalkToDatabase(title:speaker:location:date:image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F0412B1B-C2B9-42A7-8DA2-F45B2DA4A0D9 - 5813922415de4ff1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AltConf.AddTalkViewController.addTalkToDatabase(title: __C.NSString, speaker: __C.NSString, location: __C.NSString, date: __C.NSDate, image: __C.UIImage) -&gt; ()"
+                  moduleName = "AltConf"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeroenzonneveld/Developer/Hobby/swiftui-forms/cloudkit-examples/AltConf%20schedule/AltConf/AddTalkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1111">
+               </Location>
+               <Location
+                  uuid = "F0412B1B-C2B9-42A7-8DA2-F45B2DA4A0D9 - 79e31ab18de4aff8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.CKRecord&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AltConf.AddTalkViewController.addTalkToDatabase(title: __C.NSString, speaker: __C.NSString, location: __C.NSString, date: __C.NSDate, image: __C.UIImage) -&gt; ()"
+                  moduleName = "AltConf"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeroenzonneveld/Developer/Hobby/swiftui-forms/cloudkit-examples/AltConf%20schedule/AltConf/AddTalkViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ABF8AF7-486A-4166-9D84-4315B591B8D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AltConf/AddTalkViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "addTalkToDatabase(title:speaker:location:date:image:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

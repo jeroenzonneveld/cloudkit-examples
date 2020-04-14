@@ -111,7 +111,7 @@ extension TalksViewController: UITableViewDataSource {
         cell.talk = talks[indexPath.row]
         
         favorites?.forEach({ (record) in
-            let talk = record.object(forKey: "talk") as? CKReference
+            let talk = record.object(forKey: "talk") as? CKRecord.Reference
             
             if talk?.recordID == cell.talk?.record?.recordID {
                 cell.isFavorite = true
@@ -146,7 +146,7 @@ extension TalksViewController: UITableViewDelegate {
         
         var isFavorite = false
         favorites?.forEach({ (record) in
-            let talk = record.object(forKey: "talk") as? CKReference
+            let talk = record.object(forKey: "talk") as? CKRecord.Reference
             
             if talk?.recordID == talks[indexPath.row].record?.recordID {
                 isFavorite = true
@@ -169,7 +169,7 @@ private extension TalksViewController {
         
         let activityRecord = CKRecord(recordType: "favorites")
         
-        let reference = CKReference(record: record, action: CKReferenceAction.deleteSelf)
+        let reference = CKRecord.Reference(record: record, action: CKRecord.Reference.Action.deleteSelf)
         activityRecord["talk"] = reference
         
         privateDatabase.save(activityRecord) { [weak self] (record, error) in
@@ -182,7 +182,7 @@ private extension TalksViewController {
         
         var deletedRecord: CKRecord?
         favorites?.forEach({ (record) in
-            let referenceTalk = record.object(forKey: "talk") as? CKReference
+            let referenceTalk = record.object(forKey: "talk") as? CKRecord.Reference
             
             if talk.record?.recordID == referenceTalk?.recordID {
                 deletedRecord = record

@@ -9,7 +9,7 @@ extension CKAsset {
     }
     
     var image: UIImage? {
-        guard let data = try? Data(contentsOf: fileURL) else { return nil }
+        guard let fileURL = fileURL, let data = try? Data(contentsOf: fileURL) else { return nil }
         guard let image = UIImage(data: data) else { return nil }
         return image
     }
@@ -39,9 +39,9 @@ extension UIImage {
         
         switch fileType {
         case .JPG(let quality):
-            imageData = UIImageJPEGRepresentation(self, quality)
+            imageData = self.jpegData(compressionQuality: quality)
         case .PNG:
-            imageData = UIImagePNGRepresentation(self)
+            imageData = self.pngData()
         }
         guard let data = imageData else {
             throw ImageError.unableToConvertImageToData
